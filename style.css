@@ -45,3 +45,43 @@ body {
   background-color: whitesmoke;
   color: #1f2937;
 }
+
+
+.container_2{
+    display: flex;
+    min-height: 50vh;
+    background-color: #1f2937;
+    flex-direction: column;
+    padding-left: 10%;
+    padding-right: 10%;
+    
+}
+
+section{
+    flex: 1;
+    /* border: 2px solid red;*/ 
+    border-radius: 2em;
+    height: 100%; /* or fixed height like 300px */
+    width: 100%;
+    display: flex;
+    margin-top: 12%;
+    margin-bottom: 12%;
+
+}
+
+
+
+.col-left{
+  flex:1;
+  /* border: 2px solid red;*/ 
+  border-radius: 2em;
+  background-color: palevioletred;
+
+}
+.col-right{
+  flex:1;
+  /* border: 2px solid red;*/ 
+  border-radius: 2em;
+  background-color: palegreen;
+
+}
