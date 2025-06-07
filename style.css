@@ -97,6 +97,8 @@ section{
   /* border: 2px solid red;*/ 
   border-radius: 2em;
   background-color: palegreen;
+  margin-top: 5%;
+  margin-bottom: 5%;
 
 }
 
@@ -112,7 +114,24 @@ section{
   font-size: 13px;
   border-radius: 1cap;
   margin-top: 10px;
-  width: 30%;
+  width: 100px;
+
+
+}
+
+
+
+@media (max-width: 800px){
+
+section,
+.container.container_2 section{
+  flex-direction: column;
+
+}
+
+.container{
+  margin: 1em 2em;
+}
 
 
 }
