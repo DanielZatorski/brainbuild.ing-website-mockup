@@ -69,13 +69,27 @@ section{
 
 }
 
+.title{
+  font-weight: 900;
+  font-size: 48px;
+  color: #F9FAF8;
+  margin-right: 40px;
+
+}
+
+.subtext{
+  font-size: 15px;
+  text-wrap: wrap;
+  text-align: justify;
+  margin-right: 40px;
+  margin-top: 10px;
+}
 
 
 .col-left{
   flex:1;
   /* border: 2px solid red;*/ 
-  border-radius: 2em;
-  background-color: palevioletred;
+  color: whitesmoke;
 
 }
 .col-right{
@@ -83,5 +97,22 @@ section{
   /* border: 2px solid red;*/ 
   border-radius: 2em;
   background-color: palegreen;
+
+}
+
+.signup-button{
+
+  background-color: #3882F6;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 7px 7px;
+  font-size: 13px;
+  border-radius: 1cap;
+  margin-top: 10px;
+  width: 30%;
+
 
 }
