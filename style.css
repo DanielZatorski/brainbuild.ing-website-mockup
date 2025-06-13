@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #1f2937;
+    background-color: white;
 
 }
 
@@ -13,7 +13,7 @@ body {
     min-height: 5vh;
     background-color: #1f2937;
     flex-direction: row;
-        padding-left: 10%;
+    padding-left: 10%;
     padding-right: 10%;
 }
 
@@ -56,32 +56,17 @@ body {
 
 
 
-
-
 .container_2{
     display: flex;
+    flex-direction: row;
     min-height: 50vh;
     background-color: #1f2937;
-    flex-direction: column;
     padding-left: 10%;
     padding-right: 10%;
     
     
 }
 
-section{
-    flex: 1;
-    /* border: 2px solid red;*/ 
-    border-radius: 2em;
-    height: 100%; /* or fixed height like 300px */
-    width: 100%;
-    display: flex;
-    /*margin-top: 5%;*/
-    /*margin-bottom: 5%;*/
-    /*padding-top: 5%;*/
-
-
-}
 
 .title{
   font-weight: 900;
@@ -113,7 +98,6 @@ section{
   flex:2;
   /* border: 2px solid red;*/ 
   border-radius: 2em;
-  /*background-color: whitesmoke;*/ 
 
 }
 
@@ -147,29 +131,86 @@ section{
 
 
 
+@media (max-width: 800px) {
+  .container_2 {
+    flex-direction: column;
+  }
 
-@media (max-width: 800px){
-
-section,
-.container.container_2 section{
-  flex-direction: column;
-
-}
-
-.container{
-  margin: 1em 2em;
-}
-
+  .container {
+    margin: 0;
+  }
 
   .header a {
     float: none;
     display: block;
     text-align: left;
   }
-  
+
   .header-right {
     float: none;
   }
 }
 
 
+
+.container_3_title {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 10vh;
+    background-color: white;
+    flex-direction: column;
+    padding-left: 10%;
+    padding-right: 10%;
+
+}
+
+.title-container3{
+  font-weight: 900;
+  font-size: 30px;
+  color: black;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.container_3 {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10%;
+  padding-right: 10%;
+  gap: 20px; /* spacing between boxes */
+  flex-wrap: nowrap; /* keep in a row */
+  background-color: white;
+
+}
+
+.col-container3 {
+  flex: 1 1 calc((100% - 60px) / 4); /* four equal boxes minus gaps */
+  background-color: #3882F6;
+  color: white;
+  border-radius: 1em;
+  text-align: center;
+  aspect-ratio: 1 / 1; /* this makes the box square */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  padding: 20px;
+  min-width: 0;
+}
+
+@media (max-width: 800px) {
+  .container_3 {
+    flex-direction: column;
+    padding-left: 10%;
+    padding-right: 10%;
+    align-items: center; /* centers children horizontally */
+  }
+  .col-container3 {
+    flex: none;
+    width: 30%;
+    margin-bottom: 20px;
+    margin-left: auto; /* center horizontally */
+    margin-right: auto;
+  }
+}
