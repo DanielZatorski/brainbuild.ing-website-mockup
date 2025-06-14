@@ -75,7 +75,6 @@ body {
   margin-right: 40px;
   margin-left: 40px;
 
-
 }
 
 .subtext{
@@ -147,6 +146,14 @@ body {
 
   }
 
+   .title {
+    font-size: 32px; /* Instead of transform: scale */
+    white-space: normal; /* Allow wrapping */
+    overflow-wrap: break-word; /* Break long words if needed */
+    text-align: center;
+    margin: 20px 20px;
+  }
+
   
 
   .header a {
@@ -180,6 +187,7 @@ body {
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .container_3 {
