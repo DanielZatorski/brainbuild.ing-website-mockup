@@ -267,11 +267,12 @@ body {
     padding-right: 10%;
     align-items: center; /* centers children horizontally */
   }
-  .col-container3 {
+ .col-container3 {
     flex: none;
-    width: 60%;
+    width: 90%; /* use more of the available space */
+    aspect-ratio: auto; /* allow it to grow with content */
     margin-bottom: 20px;
-    margin-left: auto; /* center horizontally */
+    margin-left: auto;
     margin-right: auto;
   }
 
