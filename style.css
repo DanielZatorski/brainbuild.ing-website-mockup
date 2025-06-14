@@ -251,6 +251,9 @@ body {
   margin-left: 40px;
   /*border: 2px solid red;*/
   color: black;
+  white-space: normal; /* Allow wrapping */
+  overflow-wrap: break-word; /* Break long words if needed */
+  text-align: center;
 }
 
 
