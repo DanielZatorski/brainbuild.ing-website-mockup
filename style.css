@@ -236,4 +236,16 @@ body {
     margin-left: auto; /* center horizontally */
     margin-right: auto;
   }
+
+   .title-container3 {
+    font-size: 32px; /* Instead of transform: scale */
+    white-space: normal; /* Allow wrapping */
+    overflow-wrap: break-word; /* Break long words if needed */
+    text-align: center;
+    margin: 20px 20px;
+  }
+
+
+
+
 }
