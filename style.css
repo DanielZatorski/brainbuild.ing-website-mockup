@@ -269,7 +269,7 @@ body {
   }
   .col-container3 {
     flex: none;
-    width: 30%;
+    width: 60%;
     margin-bottom: 20px;
     margin-left: auto; /* center horizontally */
     margin-right: auto;
