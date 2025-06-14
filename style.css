@@ -350,6 +350,7 @@ body {
 .container5_left_col{
   margin: 5%;
   flex: 3;
+  font-size: large;
   /*border: 2px solid red;*/
 
 
@@ -357,7 +358,7 @@ body {
 
 
 .container5_right_col{
-  margin-top: 7%;
+  margin-top: 5%;
   flex: 1;
   /*border: 2px solid red;*/
 
@@ -414,6 +415,8 @@ body {
 
   .container5_left_col,
   .container5_right_col {
+    padding-top: 5%;
+    font-size: medium;
     flex: none;
     width: 100%;
     margin: 0;
@@ -424,5 +427,12 @@ body {
     float: none;
     display: block;
     margin: 20px auto;
+    scale: 70%;
   }
+
+.container4_row1{
+
+  font-size: large;
+}
+
 }
