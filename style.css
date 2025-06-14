@@ -325,7 +325,7 @@ body {
   padding-left: 10%;
   padding-right: 10%;
   gap: 20px; /* spacing between boxes */
-  flex-wrap: nowrap; /* keep in a row */
+  flex-wrap: wrap; 
   background-color: white;
 
 }
@@ -380,17 +380,7 @@ body {
 }
 
 
-@media (max-width: 800px) {
 
-.container5_box{
-  flex-direction: column;
-  padding-bottom: 7%;
-
-
-}
-
-
-}
 
 
 .container6{
@@ -405,4 +395,30 @@ body {
     color: white;
     text-align: center;
     padding: 5%;
+}
+
+
+@media (max-width: 800px) {
+
+.container5_box{
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-bottom: 7%;
+
+
+}
+
+  .signup-button2 {
+    margin: 20px auto;
+    display: block;
+    float: none;
+  }
+
+  
+.container6 .Copyright{
+  flex-direction: column;
+
+}
+
+
 }
