@@ -223,7 +223,7 @@ body {
   display: flex;
   flex: 1 1 calc((100% - 60px) / 4); /* four equal boxes minus gaps */
   border-style: solid;
-  border-color:  #3882F6;
+  /* border-color:  #3882F6;*/
   color: white;
   border-radius: 1em;
   border-width: thick;
@@ -243,7 +243,7 @@ body {
 
 .subtext_in_col_container_3{
   margin-top: 30%;
-  font-size: 15px;
+  font-size: 20px;
   text-wrap: wrap;
   text-align: justify;
   margin-right: 40px;
