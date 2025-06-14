@@ -399,26 +399,30 @@ body {
 
 
 @media (max-width: 800px) {
-
-.container5_box{
-  flex-direction: column;
-  flex-wrap: wrap;
-  padding-bottom: 7%;
-
-
-}
-
-  .signup-button2 {
-    margin: 20px auto;
-    display: block;
-    float: none;
+  .container_5 {
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-left: 5%;
+    padding-right: 5%;
   }
 
-  
-.container6 .Copyright{
-  flex-direction: column;
+  .container5_box {
+    flex-direction: column;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
 
-}
+  .container5_left_col,
+  .container5_right_col {
+    flex: none;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+  }
 
-
+  .signup-button2 {
+    float: none;
+    display: block;
+    margin: 20px auto;
+  }
 }
