@@ -202,21 +202,56 @@ body {
 }
 
 .col-container3 {
-  flex: 1 1 calc((100% - 60px) / 4); /* four equal boxes minus gaps */
-  background-color: #3882F6;
+  display: flex;
+  flex: 1 1 calc((100% - 60px) / 4); /* four equal boxes minus gaps 
+  border-style: solid;
+  /*border-color:  #3882F6;*/
   color: white;
   border-radius: 1em;
+  border-width: thick;
   text-align: center;
   aspect-ratio: 1 / 1; /* this makes the box square */
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.2rem;
-  padding: 20px;
   min-width: 0;
+  flex-direction: column;
+}
+
+.fig_in_col_container_3{
+
+  display: flex;
+  flex: 1 1 calc((100% - 60px) / 4); /* four equal boxes minus gaps */
+  border-style: solid;
+  border-color:  #3882F6;
+  color: white;
+  border-radius: 1em;
+  border-width: thick;
+  text-align: center;
+  aspect-ratio: 1 / 1; /* this makes the box square */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*padding: 20px;*/
+  min-width: 0;
+  flex-direction: column;
+
+
+
 }
 
 
+.subtext_in_col_container_3{
+  margin-top: 30%;
+  font-size: 15px;
+  text-wrap: wrap;
+  text-align: justify;
+  margin-right: 40px;
+  margin-top: 10px;
+  margin-left: 40px;
+  /*border: 2px solid red;*/
+  color: black;
+}
 
 
 
