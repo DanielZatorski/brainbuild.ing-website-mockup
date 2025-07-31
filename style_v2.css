@@ -30,7 +30,7 @@ body {
   z-index: 2;
   height: 60px;
   align-items: center;
-text-shadow: 0px 0px 1px black
+  text-shadow: 0px 0px 1px black
 
 }
 
@@ -45,7 +45,7 @@ text-shadow: 0px 0px 1px black
   z-index: 1;
   text-shadow: 0px 0px 1px black;
   font-size:50px;
-    font-family: "Chakra Petch", sans-serif;
+  font-family: "Chakra Petch", sans-serif;
 
 }
 #sub-title {
@@ -103,5 +103,17 @@ text-shadow: 0px 0px 1px black
 .container-frontContent{
 
     height: 2000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 400px;
+    margin-right: 400px;
 
+}
+
+.sub-container{
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    color: black;
 }
