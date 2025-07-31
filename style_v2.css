@@ -1,0 +1,68 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+
+}
+.container-header {
+    position: relative;
+    height: 400px;
+    padding: 0;
+    /*border: 1px solid red;*/
+
+    background-image: url("images/pexels-googledeepmind-17483907.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/* Position the header absolutely in the top-right corner */
+.header {
+  position: absolute;
+  right: 10%;
+  display: flex;
+  gap: 20px;
+  padding: 10px 20px;
+  z-index: 2;
+  height: 60px;
+  align-items: center;
+}
+
+
+/* Optional styling for the links */
+.header a {
+    text-decoration: none;
+    color: white; /* Adjust for contrast */
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Background strip that appears on hover */
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100vw;
+  width: 300vw;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Show strip on hover */
+.header:hover::before {
+  opacity: 1;
+}
+
+/* Nav link styles */
+.header a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    position: relative; /* So z-index works properly */
+    z-index: 3;
+}
