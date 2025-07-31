@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    background-color: black;
 
 
 }
@@ -20,7 +21,8 @@ body {
 
 /* Position the header absolutely in the top-right corner */
 .header {
-  position: absolute;
+  position: fixed;
+  top: 0;
   right: 10%;
   display: flex;
   gap: 20px;
@@ -39,7 +41,7 @@ text-shadow: 0px 0px 1px black
   left: 50%;
   transform: translate(-50%, -50%); /* Center both horizontally and vertically */
   text-align: center;
-  color: white;
+  color: whitesmoke;
   z-index: 1;
   text-shadow: 0px 0px 1px black;
   font-size: 50px;
@@ -87,7 +89,6 @@ text-shadow: 0px 0px 1px black
 
 .container-frontContent{
 
-    height: 500px;
-    background-color: black;
+    height: 2000px;
 
 }
