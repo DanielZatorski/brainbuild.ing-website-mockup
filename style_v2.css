@@ -44,9 +44,22 @@ text-shadow: 0px 0px 1px black
   color: whitesmoke;
   z-index: 1;
   text-shadow: 0px 0px 1px black;
-  font-size: 50px;
-}
+  font-size:50px;
+    font-family: "Chakra Petch", sans-serif;
 
+}
+#sub-title {
+  position: absolute;
+  top:70%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center both horizontally and vertically */
+  text-align: center;
+  color: whitesmoke;
+  z-index: 1;
+  text-shadow: 0px 0px 1px black;
+  font-size: 30px;
+  font-family: "Chakra Petch", sans-serif;
+}
 
 
 /* Optional styling for the links */
