@@ -154,6 +154,8 @@ body {
 .text_sub_container{
   font-family: "Chakra Petch", sans-serif;
   color: whitesmoke;
-
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
 
 }
