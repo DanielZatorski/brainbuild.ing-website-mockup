@@ -7,6 +7,9 @@ body {
 
 
 }
+
+/* ############ header section ##################### */
+
 .container-header {
     position: relative;
     height: 400px;
@@ -35,6 +38,54 @@ body {
 }
 
 
+
+
+/* Optional styling for the links */
+.header a {
+    text-decoration: none;
+    color: white; /* Adjust for contrast */
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Background strip that appears on hover */
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100vw;
+  width: 300vw;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Show strip on hover */
+.header:hover::before {
+  opacity: 1;
+}
+
+/* Nav link styles */
+.header a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    position: relative; 
+    z-index: 3;
+    transition: color 0.3s ease;
+
+}
+
+/* Change link color to black when hovering over the header */
+.header:hover a {
+    color: #373851;
+}
+
+/* ############ HERO section ##################### */
+
 #title {
   position: absolute;
   top:40%;
@@ -62,42 +113,7 @@ body {
 }
 
 
-/* Optional styling for the links */
-.header a {
-    text-decoration: none;
-    color: white; /* Adjust for contrast */
-    font-weight: bold;
-    font-size: 16px;
-}
-
-/* Background strip that appears on hover */
-.header::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -100vw;
-  width: 300vw;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  z-index: -1;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-/* Show strip on hover */
-.header:hover::before {
-  opacity: 1;
-}
-
-/* Nav link styles */
-.header a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    font-size: 16px;
-    position: relative; /* So z-index works properly */
-    z-index: 3;
-}
+/* ############ Subcontainer section - after HERO ##################### */
 
 
 .container-frontContent{
@@ -112,9 +128,32 @@ body {
 
 }
 
+
 .sub-container{
-    background-color: white;
-    width: 100px;
-    height: 100px;
+    background-color: #8C8396;
+    width: 300px;
+    height: 300px;
     color: black;
+    border-radius: 30px;
+    /* White glow effect around subcontainer*/
+    box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+
+.img_sub_container {
+  width: 200px;
+  height: 200px;
+}
+
+.text_sub_container{
+  font-family: "Chakra Petch", sans-serif;
+  color: whitesmoke;
+
+
 }
