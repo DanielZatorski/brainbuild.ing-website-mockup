@@ -1,29 +1,26 @@
+/* ---------- Base Styles ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    background-color: black;
-    font-family: "Chakra Petch", sans-serif;
-
-
+  font-family: 'Chakra Petch', sans-serif;
+  line-height: 1.5;
+  color: white;
+  background-color: black;
+  overflow-x: hidden;
 }
 
-/* ############ header section ##################### */
-
+/* ---------- Header Section ---------- */
 .container-header {
-    position: relative;
-    height: 400px;
-    padding: 0;
-    /*border: 1px solid red;*/
-
-    background-image: url("images/pexels-googledeepmind-17483907.jpg");
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+  position: relative;
+  height: 400px;
+  background: url("images/pexels-googledeepmind-17483907.jpg") center/cover no-repeat;
 }
 
-/* Position the header absolutely in the top-right corner */
+/* Navigation */
 .header {
   position: fixed;
   top: 0;
@@ -31,25 +28,12 @@ body {
   display: flex;
   gap: 20px;
   padding: 10px 20px;
-  z-index: 2;
-  height: 60px;
+  z-index: 10;
   align-items: center;
-  text-shadow: 0px 0px 1px black
-
+  text-shadow: 0 0 1px black;
+  background: transparent;
 }
 
-
-
-
-/* Optional styling for the links */
-.header a {
-    text-decoration: none;
-    color: white; /* Adjust for contrast */
-    font-weight: bold;
-    font-size: 16px;
-}
-
-/* Background strip that appears on hover */
 .header::before {
   content: "";
   position: absolute;
@@ -63,182 +47,108 @@ body {
   transition: opacity 0.3s ease;
 }
 
-/* Show strip on hover */
 .header:hover::before {
   opacity: 1;
 }
 
-/* Nav link styles */
 .header a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    font-size: 16px;
-    position: relative; 
-    z-index: 3;
-    transition: color 0.3s ease;
-
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  position: relative;
+  z-index: 2;
+  transition: color 0.3s ease;
 }
 
-/* Change link color to black when hovering over the header */
 .header:hover a {
-    color: #373851;
+  color: #373851;
 }
 
-/* ############ HERO section ##################### */
-
+/* ---------- Hero Section ---------- */
 #title {
   position: absolute;
-  top:40%;
+  top: 40%;
   left: 50%;
-  transform: translate(-50%, -50%); /* Center both horizontally and vertically */
+  transform: translate(-50%, -50%);
   text-align: center;
   color: whitesmoke;
-  z-index: 1;
-  text-shadow: 0px 0px 1px black;
-  font-size:50px;
-
+  font-size: 3rem;
+  text-shadow: 0 0 1px black;
 }
+
 #sub-title {
   position: absolute;
-  top:70%;
+  top: 70%;
   left: 50%;
-  transform: translate(-50%, -50%); /* Center both horizontally and vertically */
+  transform: translate(-50%, -50%);
   text-align: center;
   color: whitesmoke;
-  z-index: 1;
-  text-shadow: 0px 0px 1px black;
-  font-size: 30px;
+  font-size: 1.8rem;
+  text-shadow: 0 0 1px black;
 }
 
-
-/* ############ Subcontainer section - after HERO ##################### */
-
-
-.container-frontContent{
-
-    height: 400px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 100px;
-    margin-left: 400px;
-    margin-right: 400px;
-
+/* ---------- General Container ---------- */
+.container-frontContent {
+  max-width: 1200px;
+  margin: 100px auto;
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  align-items: flex-start;
 }
 
-
-.sub-container{
-    background-color: #8C8396;
-    width: 300px;
-    height: 300px;
-    color: black;
-    border-radius: 30px;
-    /* White glow effect around subcontainer*/
-    box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.5);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-
-}
-
-
-.img_sub_container {
-  width: 200px;
-  height: 200px;
-}
-
-.text_sub_container{
-  color: whitesmoke;
-  text-align: center;
-  padding-left: 15px;
-  padding-right: 15px;
-
-}
-
-/* ############ Subcontainer section - after company memo ##################### */
-
-
-.sub-containerDescription{
-   /* background-color: #8C8396;*/
-    width: 500px;
-    height: 400px;
-    color: black;
-    /*border-radius: 30px;*/
-    /* White glow effect around subcontainer*/
-    /*box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.5);*/
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-
-}
-
-.sub-containerDashboard{
-    width: 500px;
-    height: 400px;
-    color: black;
-    /* White glow effect around subcontainer*/
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    object-fit: cover;
-
-}
-
-#btn-signUp {
-  display: inline-flex;
+/* ---------- Sub-container Squares ---------- */
+.sub-container {
+  flex: 1 1 280px;
+  max-width: 320px;
+  background-color: #8C8396;
+  color: black;
+  border-radius: 30px;
+  box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.5);
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 8px; /* space between text and arrow */
-  
-  padding: 10px 20px;       /* more padding for roundness */
-  font-size: 16px;
-  color: white;
-  background: #7c6ddf;      /* pick a color you like */
-  border: none;
-  border-radius: 50px;      /* makes it pill-shaped */
-  cursor: pointer;
-  transition: background 0.3s ease, transform 0.2s ease;
+  padding: 20px;
+  text-align: center;
 }
 
-#btn-signUp:hover {
-  background: #7b68ee;
-  transform: translateY(-2px); /* small lift on hover */
+.img_sub_container {
+  width: 80%;
+  max-width: 200px;
+  height: auto;
 }
 
-
-/* ############ container section - use cases ##################### */
-
-
-.container-frontContent.alt {
-  display: flex;                   /* make two columns */
-  flex-direction: row;             /* side-by-side */
-  justify-content: space-between;
-  align-items: flex-start;         /* align top */
-  gap: 40px;                       /* space between columns */
-  
+.text_sub_container {
   color: whitesmoke;
-   /*background-color: #8C8396;*/
-   /*border-radius: 50px;
-  /*box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.5);*/
-  height: auto;                    /* let it grow with content */
-  padding: 40px;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+/* ---------- Use Cases Section (2 Columns) ---------- */
+.container-frontContent.alt {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  align-items: flex-start;
+  color: whitesmoke;
+  padding: 40px 20px;
 }
 
 .left-column {
-  flex: 1;
+  flex: 1 1 300px;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
 .right-column {
-  flex: 1;
+  flex: 1 1 300px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -247,14 +157,82 @@ body {
 .main-image {
   max-width: 100%;
   height: auto;
-  box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.5);
   border-radius: 30px;
-
-
+  box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.5);
 }
 
 .sub-containerIntro {
   display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* ---------- Company Memo Section ---------- */
+.sub-containerDescription {
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  gap: 15px;
+  padding: 20px;
+  text-align: center;
+}
+
+.sub-containerDashboard {
+  flex: 1 1 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sub-containerDashboard img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+/* ---------- Button ---------- */
+#btn-signUp {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  font-size: 16px;
+  color: white;
+  background: #7c6ddf;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#btn-signUp:hover {
+  background: #7b68ee;
+  transform: translateY(-2px);
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  #title {
+    font-size: 2.2rem;
+  }
+
+  #sub-title {
+    font-size: 1.4rem;
+  }
+
+  .header {
+    right: 0;
+    left: 0;
+    justify-content: center;
+  }
+
+  .container-frontContent {
+    margin-top: 60px;
+  }
+
+  .sub-container {
+    flex: 1 1 100%;
+  }
 }
