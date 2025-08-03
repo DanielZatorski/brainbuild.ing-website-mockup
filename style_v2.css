@@ -117,7 +117,7 @@ body {
 
 .container-frontContent{
 
-    height: 500px;
+    height: 400px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -163,8 +163,8 @@ body {
 
 .sub-containerDescription{
     background-color: #8C8396;
-    width: 700px;
-    height: 300px;
+    width: 500px;
+    height: 400px;
     color: black;
     border-radius: 30px;
     /* White glow effect around subcontainer*/
@@ -175,4 +175,38 @@ body {
     align-items: center;
 
 
+}
+
+.sub-containerDashboard{
+    width: 500px;
+    height: 400px;
+    color: black;
+    /* White glow effect around subcontainer*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover
+
+}
+
+#btn-signUp {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px; /* space between text and arrow */
+  
+  padding: 10px 20px;       /* more padding for roundness */
+  font-size: 16px;
+  color: white;
+  background: #7c6ddf;      /* pick a color you like */
+  border: none;
+  border-radius: 50px;      /* makes it pill-shaped */
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#btn-signUp:hover {
+  background: #7b68ee;
+  transform: translateY(-2px); /* small lift on hover */
 }
