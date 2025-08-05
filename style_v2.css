@@ -238,3 +238,18 @@ body {
     flex: 1 1 100%;
   }
 }
+
+
+/* ---------- Bouncing effect ---------- */
+
+.sub-container.bounce {
+  animation: bounce 0.6s ease;
+}
+
+@keyframes bounce {
+  0%   { transform: translateY(0) scale(1); } /* starting position */
+  30%  { transform: translateY(-30px) scale(1.05); } /* jump up by 30px and increase scale a bit */
+  50%  { transform: translateY(0) scale(0.95); } /* goes back to original position with a slightly smaller size */
+  70%  { transform: translateY(-15px) scale(1.02); } /* adds second bounce up  */
+  100% { transform: translateY(0) scale(1); } /* return to start position and normal size  */
+}
