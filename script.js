@@ -31,3 +31,9 @@ checkInMiddle(); // initial check
 // start website at the top after refresh
 window.history.scrollRestoration = "manual";
 window.scrollTo(0, 0);
+
+
+
+// get dynamic year for the footer
+
+document.getElementById("year").textContent = new Date().getFullYear()

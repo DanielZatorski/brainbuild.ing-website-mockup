@@ -212,6 +212,69 @@ body {
   transform: translateY(-2px);
 }
 
+
+/* ---------- Footer ---------- */
+.footer {
+  color: whitesmoke;
+  background-color: #7c6ddf;
+  box-shadow: 0 0 15px 5px rgba(123, 104, 238, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+  font-family: 'Inter', sans-serif;
+}
+
+/* CONTACT ROW */
+#footerContact {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1000px;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  line-height: 1.6;
+}
+
+/* CONTACT ITEMS */
+#footerContact p {
+  margin: 0.3rem 0;
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* COPYRIGHT LINE */
+#footerCopyright {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #e6e6e6;
+  margin-top: 0.5rem;
+}
+
+/* Optional divider */
+.footer-divider {
+  width: 80%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.3);
+  margin: 1rem 0;
+}
+
+
+
+
+
+
 /* ---------- Responsive ---------- */
 @media (max-width: 768px) {
   #title {
