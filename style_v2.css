@@ -116,9 +116,6 @@ body {
   text-align: center;
 }
 
-.sub-container-about {
-  box-shadow: 0 0 15px 5px rgba(102, 99, 117, 0.5)
-}
 
 .img_sub_container {
   width: 80%;
@@ -313,8 +310,37 @@ body {
   text-align: center;
 }
 
+.sub-container-about {
+  box-shadow: 0 0 15px 5px rgba(102, 99, 117, 0.5)
+}
+
+.team-card {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #8f46a5 0%, #7c6ddf 100%);
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 20px;
+  font-family: 'Chakra Petch', sans-serif;
+  border: none;
+  cursor: pointer;
+}
 
 
+.team-card:hover {
+  color: #373851;
+  transform: translateY(-5px);
+}
+
+/* */
 /* ---------- Responsive ---------- */
 @media (max-width: 768px) {
   #title {
