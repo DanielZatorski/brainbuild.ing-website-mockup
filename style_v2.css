@@ -146,6 +146,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  justify-content: center;
+  align-items: center;
 }
 
 .right-column {
@@ -332,6 +334,7 @@ body {
   font-family: 'Chakra Petch', sans-serif;
   border: none;
   cursor: pointer;
+  margin-top: 40px;
 }
 
 
