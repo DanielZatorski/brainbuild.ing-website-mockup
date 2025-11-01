@@ -414,6 +414,24 @@ body {
   .sub-container {
     flex: 1 1 100%;
   }
+
+  @media (max-width: 768px) {
+    .card {
+      width: 90vw;     
+      height: 90vw;     
+      max-width: 400px; 
+      max-height: 400px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .card {
+      width: 95vw;
+      height: 95vw;
+      max-width: 350px;
+      max-height: 350px;
+    }
+  }
 }
 
 
