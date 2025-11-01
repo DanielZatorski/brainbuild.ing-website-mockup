@@ -280,42 +280,37 @@ body {
 /* ---------- Hero ---------- */
 
 .container-header-about {
-  position: relative;
+  position: relative; 
   height: 400px;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
 }
-
 
 .background-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
+  object-fit: cover; 
+}
+
+.overlay {
+  background-color: #7b68ee; 
+  opacity: 0.5; 
 }
 
 
-.container-header-about .content {
-  position: relative;
-  z-index: 1;
-  color: white;
-  text-align: center;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-
-/* Color overlay */
+.background-video,
 .overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #7b68ee; /* your color */
-  opacity: 0.5; /* adjust for intensity */
-  z-index: -1;
+  z-index: -1; 
+}
+
+.container-header-about .content {
+  z-index: 1; 
+  color: white;
+  text-align: center;
 }
 
 
