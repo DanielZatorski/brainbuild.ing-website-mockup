@@ -316,32 +316,77 @@ body {
   box-shadow: 0 0 15px 5px rgba(102, 99, 117, 0.5)
 }
 
-.team-card {
+
+
+/* ---------- flipping card section ---------- */
+
+
+.card {
+  margin: 0 auto;
   width: 500px;
   height: 500px;
+  perspective: 1000px;
+  margin-bottom: 100px;
+}
+
+.card__inner {
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative;
+}
+
+.card__inner.is-flipped {
+  transform: rotateY(180deg);
+}
+
+.card__face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+
+
+.card__face--front {
+  background: linear-gradient(135deg, #8f46a5 0%, #7c6ddf 100%);
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 12px;
-  background: linear-gradient(135deg, #8f46a5 0%, #7c6ddf 100%);
-  color: white;
-  font-size: 1.8rem;
-  font-weight: 600;
-  text-align: center;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border-radius: 20px;
-  font-family: 'Chakra Petch', sans-serif;
-  border: none;
-  cursor: pointer;
-  margin-top: 40px;
 }
 
 
-.team-card:hover {
+.card__face--front:hover {
   color: #373851;
   transform: translateY(-5px);
 }
+
+
+.card__face--front h2 {
+  color: whitesmoke;
+  font-size: 32px;
+}
+
+.card__face--back {
+  transform: rotateY(180deg);
+}
+
+.card__face--back img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* fits image without cropping */
+  display: block;
+}
+
+
 
 /* */
 /* ---------- Responsive ---------- */
