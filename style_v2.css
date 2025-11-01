@@ -424,12 +424,12 @@ body {
     }
   }
 
-  @media (max-width: 480px) {
+  @media (max-width: 360px) {
     .card {
       width: 95vw;
       height: 95vw;
-      max-width: 350px;
-      max-height: 350px;
+      max-width: 300px;
+      max-height: 300px;
     }
   }
 }
