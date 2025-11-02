@@ -130,6 +130,14 @@ body {
   font-size: 1rem;
 }
 
+.text_sub_container.contact--Left--Align{
+  font-size: 1.5rem;
+  text-align: left;
+  
+}
+
+
+
 /* ---------- Use Cases Section (2 Columns) ---------- */
 .container-frontContent.alt {
   display: flex;
@@ -139,6 +147,10 @@ body {
   align-items: flex-start;
   color: whitesmoke;
   padding: 40px 20px;
+}
+
+.container-frontContent.alt.reverserow{
+  flex-direction: row-reverse;
 }
 
 .left-column {
@@ -162,6 +174,14 @@ body {
   height: auto;
   border-radius: 30px;
   box-shadow: 0 0 15px 5px rgb(123, 104, 238, 0.5);
+}
+
+.roundimg {
+  max-width: 80%;
+  height: auto;
+  border-radius: 30px;
+
+
 }
 
 .sub-containerIntro {
