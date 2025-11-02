@@ -43,7 +43,7 @@ body {
   height: 100%;
   background-color: rgba(255, 255, 255, 0.8);
   z-index: -1;
-  opacity: 0;
+  opacity: 1;
   transition: opacity 0.3s ease;
 }
 
@@ -53,7 +53,7 @@ body {
 
 .header a {
   text-decoration: none;
-  color: white;
+  color: #373851;
   font-weight: bold;
   font-size: 16px;
   position: relative;
@@ -61,8 +61,8 @@ body {
   transition: color 0.3s ease;
 }
 
-.header:hover a {
-  color: #373851;
+.header a:hover {
+  color: #7c6ddf; 
 }
 
 /* ---------- Hero Section ---------- */
@@ -233,6 +233,11 @@ body {
 #btn-signUp:hover {
   background: rgb(123, 104, 238);
   transform: translateY(-2px);
+}
+
+#btn-signUp.small{
+
+  width: 200px;
 }
 
 
